@@ -1,4 +1,4 @@
-name: Android CI
+name: Build the APK
 
 on:
   push:
@@ -28,6 +28,6 @@ jobs:
 
       with:
 
-        name: my-artifact
+        name: produced-apks
 
-        path: ./*
+        path: ./app/build/outputs/apk/debug/*
